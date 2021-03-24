@@ -7,11 +7,60 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "Home Page"
-        name: "home"
-        file: "content/home.md"
+      - label: "Home Page - Main Hero"
+        name: "homePageMainHero"
+        file: "content/home-main_hero.md"
         fields:
-          - {label: Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}
-          - {label: Main Hero Title, name: main_hero_title, widget: string}
-          - {label: Main Hero Subtitle, name: main_hero_subtitle, widget: string }
+      - label: "Home Page - Split Hero"
+        name: "homePageSplitHero"
+        file: "content/home-split_hero.md"
+        fields:
+          - {label: Body, name: body, widget: markdown}
+      - label: "Home Page - Delivery"
+        name: "homePageDelivery"
+        file: "content/home-delivery.md"
+        fields:
+          - {label: Body, name: body, widget: markdown}
+      - label: "Home Page - Delivery Card 1"
+        name: "homePageDeliveryCard1"
+        file: "content/home-delivery-card_1.md"
+        fields:
+          - {label: Body, name: body, widget: markdown}
+      - label: "Home Page - Delivery Card 2"
+        name: "homePageDeliveryCard2"
+        file: "content/home-delivery-card_2.md"
+        fields:
+          - {label: Body, name: body, widget: markdown}
+      - label: "Contact Page"
+        name: "contact"
+        file: "content/contact.md"
+        fields:
+          - {label: Hours, name: hours, widget: string}
+          - {label: Phone, name: phone, widget: string}
+          - {label: Address, name: address, widget: string}
+      - label: "Delivery Page - Main Hero"
+        name: "deliveryOverviewMainHero"
+        file: "content/delivery-main_hero.md"
+        fields:
+          - {label: Body, name: body, widget: markdown}
+      - label: "Delivery Page - Overview (Curbside)"
+        name: "deliveryOverviewCurbside"
+        file: "content/delivery-overview_curbside.md"
+        fields:
+          - {label: Body, name: body, widget: markdown}
+      - label: "Delivery Page - Overview (Delivery)"
+        name: "deliveryOverviewDelivery"
+        file: "content/delivery-overview_delivery.md"
+        fields:
+          - {label: Body, name: body, widget: markdown}
+      - label: "Delivery Page - Overview (Numbered)"
+        name: "deliveryOverviewNumbered"
+        file: "content/delivery-overview_numbered.md"
+        fields:
+          - {label: Body, name: body, widget: markdown}
+      - label: "Delivery Page - Overview (Service)"
+        name: "deliveryOverviewService"
+        file: "content/delivery-overview_service.md"
+        fields:
+          - {label: Body, name: body, widget: markdown}

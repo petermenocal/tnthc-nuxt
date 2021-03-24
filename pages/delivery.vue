@@ -1,104 +1,78 @@
 <template>
-  <div>
+  <div class="wrapd">
     <section class="delivery-container">
       <div id="delivery-hero-content">
-        <h1 class="title">
-          {{ page.mainHero.title }}
-        </h1>
-        <h2 class="subtitle">
-          {{ page.mainHero.subtitle }}
-        </h2>
-        <h2 class="subtitle">
-          {{ page.mainHero.caption }}
-        </h2>
+        <nuxt-content :document="mainHero" />
       </div>
     </section>
 
     <section id="delivery_overview" class="sameday">
       <div class="delivery_overview_title">
-        <h1>{{ page.deliveryOverview.title }}</h1>
-        <p>{{ page.deliveryOverview.subtitle }}</p>
+        <h1>SAME DAY DELIVERY</h1>
+        <p>On orders made before 12 (noon)</p>
       </div>
       <div class="delivery_overview_content">
         <div class="delivery_overview_text">
-          {{ page.deliveryOverview.content }}
+          <nuxt-content :document="overviewDelivery" />
         </div>
         <div class="delivery_overview_image">
-          <img
-            :src="page.deliveryOverview.image"
-            alt=""
-            class="delivery_image"
-          />
+          <img src="/img/bag2.png" alt="" class="delivery_image" />
         </div>
       </div>
     </section>
 
     <section id="delivery_overview" class="samedaysm">
       <div class="delivery_overview_title">
-        <h1>{{ page.deliveryOverview.title }}</h1>
-        <p>{{ page.deliveryOverview.subtitle }}</p>
+        <h1>SAME DAY DELIVERY</h1>
+        <p>On orders made before 12 (noon)</p>
       </div>
       <div class="delivery_overview_content">
-        <img :src="page.deliveryOverview.title" height="200px" alt="" />
-        {{ page.deliveryOverview.content }}
+        <img src="/img/bag2.png" height="200px" alt="" />
+        <nuxt-content :document="overviewDelivery" />
       </div>
     </section>
 
     <section id="numbered">
       <div class="num-wrap">
         <div>
-          <h1>
-            <span class="number">01</span> {{ page.numberedOVerview.title01 }}
-          </h1>
-          {{ page.numberedOVerview.content01 }}
+          <h1><span class="number">01</span> Shop</h1>
+          <p>{{ overviewNumbered.slot1 }}</p>
         </div>
         <div>
-          <h1>
-            <span class="number">02</span> {{ page.numberedOVerview.title02 }}
-          </h1>
-          {{ page.numberedOVerview.content02 }}
+          <h1><span class="number">02</span> Verify</h1>
+          <p>{{ overviewNumbered.slot2 }}</p>
+        </div>
+
+        <div>
+          <h1><span class="number">03</span> Update</h1>
+          <p>{{ overviewNumbered.slot3 }}</p>
         </div>
         <div>
-          <h1>
-            <span class="number">03</span> {{ page.numberedOVerview.title03 }}
-          </h1>
-          {{ page.numberedOVerview.content03 }}
-        </div>
-        <div>
-          <h1>
-            <span class="number">04</span> {{ page.numberedOVerview.title04 }}
-          </h1>
-          <p>
-            {{ page.numberedOVerview.content04 }}
-          </p>
+          <h1><span class="number">04</span> Receive</h1>
+          <p>{{ overviewNumbered.slot4 }}</p>
         </div>
       </div>
     </section>
 
     <section id="delivery_overview">
       <div class="delivery_overview_title">
-        <h1>{{ page.curbsideOverview.title }}</h1>
-        <p>{{ page.curbsideOverview.subtitle }}m</p>
+        <h1>Curbside Pick-up</h1>
+        <p><CurbsideIcon /></p>
+        <p>Daily 7am - 8pm</p>
       </div>
       <div class="delivery_overview_content">
         <div class="curbside-content">
-          <CurbsideIcon />
-          {{ page.curbsideOverview.contentCurbside }}
+          <nuxt-content :document="overviewCurbside" />
         </div>
         <div>
-          <img
-            :src="page.curbsideOverview.curbsideImage"
-            alt=""
-            height="500px"
-          />
+          <img src="/img/store.jpg" alt="" height="500px" />
         </div>
       </div>
     </section>
 
     <section class="service">
       <div>
-        <h1>{{ page.serviceBlurb.title }}</h1>
-        {{ page.curbsideOverview.contentServiceBlurb }}
+        <nuxt-content :document="overviewService" />
       </div>
     </section>
   </div>
@@ -113,6 +87,9 @@ export default {
 };
 </script>
 <style>
+.wrapd {
+  overflow-x: hidden;
+}
 section {
   display: block;
 }
@@ -159,6 +136,12 @@ section {
 .num-wrap div h1 {
   color: #2a4759;
   margin-bottom: 40px;
+}
+.samedaysm .delivery_overview_content .nuxt-content-container {
+  padding: 20px;
+}
+.samedaysm .delivery_overview_content .nuxt-content-container .nuxt-content h1 {
+  text-align: center;
 }
 .delivery-container {
   min-height: 600px;
@@ -210,9 +193,23 @@ section {
 .samedaysm p {
   padding: 20px;
 }
+.samedaysm {
+  display: none;
+}
+.samdedaysm {
+  padding: 40px;
+}
+.curbside-content .nuxt-content h2 {
+  font-weight: 200;
+  font-family: "Open Sans", sans-serif;
+  color: #8bd9d9;
+}
 @media (max-width: 768px) {
   .sameday {
     display: none;
+  }
+  .samedaysm {
+    display: block;
   }
   .num-wrap {
     flex-direction: column;
@@ -225,21 +222,38 @@ section {
     padding-top: 20px;
   }
 }
-@media (min-height: 992px) {
+@media (min-width: 992px) {
   #numbered {
     background: white;
     min-height: 700px;
     padding-top: 200px;
-    margin-top: -200px;
+    margin-top: -200px !important;
   }
 }
 </style>
 <script>
+import CurbsideIcon from "~/components/CurbsideIcon.vue";
 export default {
+  components: { CurbsideIcon },
   async asyncData({ $content }) {
-    const page = await $content("delivery").fetch();
+    const mainHero = await $content("delivery-main_hero").fetch();
+    const overviewCurbside = await $content(
+      "delivery-overview_curbside"
+    ).fetch();
+    const overviewDelivery = await $content(
+      "delivery-overview_delivery"
+    ).fetch();
+    const overviewNumbered = await $content(
+      "delivery-overview_numbered"
+    ).fetch();
+
+    const overviewService = await $content("delivery-overview_service").fetch();
     return {
-      page
+      mainHero,
+      overviewCurbside,
+      overviewDelivery,
+      overviewNumbered,
+      overviewService
     };
   }
 };

@@ -1,0 +1,163 @@
+html {
+  font-size: 16px;
+  line-height: 1.25;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.text-center {
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Open Sans Condensed", sans-serif;
+  line-height: 1.35;
+}
+p,
+a {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+.nuxt-content h1 {
+  font-size: 3.1875em;
+}
+h2,
+.nuxt-content h2 {
+  font-size: 1.9792em;
+}
+h3,
+.nuxt-content h3 {
+  font-size: 1.4792em;
+}
+h4,
+.nuxt-content h4 {
+  font-size: 1.2292em;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+.btn-rounded {
+  background: #379ba6;
+  padding: 10px;
+  border-radius: 20px;
+  border: 0px;
+  color: white;
+}
+.btn-cta {
+  background: #379ba6;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  font-size: 1.5rem;
+}
+
+.social {
+  padding-top: 20px;
+}
+#toolbar {
+  padding: 10px !important;
+  height: 90px;
+  background: #304757;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#toolbar .link {
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+}
+#footer {
+  background: #304757;
+  min-height: 300px;
+  color: white;
+}
+#footer .content {
+  min-height: 290px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+#footer .footer-logo {
+  width: 30%;
+}
+#footer .links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#footer .links a {
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+}
+
+#footer .legal {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+}
+.b-sidebar {
+  background: #16252e;
+  padding: 10px;
+  color: white !important;
+}
+.b-sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+  line-height: 2;
+}
+.b-sidebar * {
+  list-style-type: none;
+}
+#close-btn {
+  background: none;
+  color: rgb(165, 24, 24);
+  border: 0px;
+  font-weight: 800;
+  float: right;
+  font-size: 2rem;
+}
+.menutoggle {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 1200px) {
+  .largelinks {
+    display: none;
+  }
+  .menutoggle {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .largelinks {
+    display: block;
+  }
+  .menutoggle {
+    display: none;
+  }
+}

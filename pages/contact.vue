@@ -11,9 +11,9 @@
       <div class="contact-form">
         <div class="contact-form-section">
           <h2>Contact Us</h2>
-          <p>We’re Open: Daily 8am-12am</p>
-          <p>Phone: 702.418.0420</p>
-          <p>Location: 5630 Stephanie St. Las Vegas, NV. 89122</p>
+          <p>We’re Open: {{ page.hours }}m</p>
+          <p>Phone: {{ page.phone }}</p>
+          <p>Location: {{ page.address }}</p>
         </div>
         <div class="contact-form-section">
           <p class="text-center">
@@ -85,3 +85,14 @@ textarea {
   }
 }
 </style>
+<script>
+export default {
+  async asyncData({ $content }) {
+    const page = await $content("contact").fetch();
+
+    return {
+      page
+    };
+  }
+};
+</script>

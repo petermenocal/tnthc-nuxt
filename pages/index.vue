@@ -3,34 +3,19 @@
     <!-- hero main -->
     <section class="container">
       <div id="hero-content">
-        <h1 class="title">
-          <!-- {{ page.mainHero.title }} -->
-        </h1>
-        <!-- <h2 class="subtitle">{{ page.mainHero.subtitle }}</h2> -->
-        <div>
-          <!-- {{ page.Content }} -->
-          <nuxt-content :document="page"></nuxt-content>
-        </div>
+        <nuxt-content :document="mainHero"></nuxt-content>
       </div>
     </section>
     <!-- hero split -->
     <section class="hero-split">
-      <div class="hero-split-image">
+      <div class="hero-split-image split">
         <img
           src="https://staging-topnotch.web.app/build/assets/model-tp-logo.jpg"
           alt=""
         />
       </div>
-      <div class="hero-split-content">
-        <h2>Nevada’s Premier</h2>
-        <h1>Cannabis Dispensary</h1>
-        <p>
-          Top Notch THC located on Stephanie St. in Las Vegas NV, has been the
-          go-to dispensary for cannabis connoisseurs who want the best products,
-          friendliest service, and most comfortable shopping experience
-          available anywhere in Las Vegas. Come in today and purchase the
-          highest-quality cannabis products available at amazing prices!
-        </p>
+      <div class="hero-split-content split">
+        <nuxt-content :document="splitHero"></nuxt-content>
       </div>
     </section>
     <!-- subscribe bar -->
@@ -65,34 +50,18 @@
     <!-- delivery -->
     <section class="delivery">
       <div class="delivery-section">
-        <h3>Free Delivery With Minimum Purchase</h3>
-        <h1>Delivery + Curbside</h1>
-        <h2>Curbside Pick-up: 7am - 8pm</h2>
-        <h2>In-store Shopping: 8am - 12am</h2>
+        <nuxt-content :document="homeDelivery" />
         <NuxtLink to="/deliveryorder">
           <button class="btn-cta">ORDER NOW</button></NuxtLink
         >
       </div>
       <div class="delivery-section cards">
         <div class="card">
-          <h1>Delivery</h1>
-          <p>
-            Available with $50 minimum order plus a $10 delivery charge. Orders
-            must be made before 12 (noon) for same day delivery. All delivery
-            orders placed after 12 (noon) will be scheduled for next day
-            delivery. We offer FREE delivery on orders of $150 or more.
-          </p>
+          <nuxt-content :document="homeDeliveryCard1" />
           <NuxtLink to="/delivery">Learn more</NuxtLink>
         </div>
         <div class="card">
-          <h1>Curbside</h1>
-          <p>
-            Available daily from 7am-8pm. When shopping online make sure you are
-            in the curbside menu area. Once your order is placed, we will enter
-            you in our text based queue system. You’ll receive a text letting
-            you know it’s time to drive in and pick up your order. Click the
-            link in the text, then click “I’m coming”. After that, head on over.
-          </p>
+          <nuxt-content :document="homeDeliveryCard2" />
           <NuxtLink to="/delivery">Learn more</NuxtLink>
         </div>
       </div>
@@ -101,6 +70,9 @@
 </template>
 
 <style>
+.split {
+  width: 50%;
+}
 .container {
   min-height: 800px;
   background: url("/img/hero.jpg") center center;
@@ -114,28 +86,14 @@
 #hero-content {
   padding-bottom: 250px !important;
 }
-.title {
-  display: block;
-  font-weight: 800;
-  font-size: 100px;
-  letter-spacing: 1px;
-}
 
-.subtitle {
-  font-weight: 800;
-  font-size: 42px;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
 .hero-split {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.hero-split div {
-  width: 50%;
-}
+
 .hero-split-image img {
   max-width: 100%;
 }
@@ -247,9 +205,7 @@
   #hero-content {
     padding-bottom: 0px !important;
   }
-  .hero-split div {
-    width: 100%;
-  }
+
   .subscribe-bar {
     padding: 30px 10px;
   }
@@ -262,6 +218,11 @@
   }
   .skip-the-line div {
     margin-left: 0% !important;
+  }
+}
+@media (max-width: 992px) {
+  .split {
+    width: 100%;
   }
 }
 @media (max-width: 1300px) {
@@ -281,10 +242,17 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const page = await $content("home").fetch();
-    console.log(page);
+    const mainHero = await $content("home-main_hero").fetch();
+    const splitHero = await $content("home-split_hero").fetch();
+    const homeDelivery = await $content("home-delivery").fetch();
+    const homeDeliveryCard1 = await $content("home-delivery-card_1").fetch();
+    const homeDeliveryCard2 = await $content("home-delivery-card_2").fetch();
     return {
-      page
+      mainHero,
+      splitHero,
+      homeDelivery,
+      homeDeliveryCard1,
+      homeDeliveryCard2
     };
   }
 };
