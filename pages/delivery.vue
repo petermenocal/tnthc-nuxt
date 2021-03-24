@@ -16,7 +16,12 @@
           <nuxt-content :document="overviewDelivery" />
         </div>
         <div class="delivery_overview_image">
-          <img src="/img/bag2.png" alt="" class="delivery_image" />
+          require('~/assets/images/my-logo.png')
+          <img
+            :src="overviewCurbside.deliveryOverviewImage"
+            alt=""
+            class="delivery_image"
+          />
         </div>
       </div>
     </section>
@@ -27,7 +32,11 @@
         <p>On orders made before 12 (noon)</p>
       </div>
       <div class="delivery_overview_content">
-        <img src="/img/bag2.png" height="200px" alt="" />
+        <img
+          :src="overviewCurbside.deliveryOverviewImage"
+          height="200px"
+          alt=""
+        />
         <nuxt-content :document="overviewDelivery" />
       </div>
     </section>
@@ -65,7 +74,11 @@
           <nuxt-content :document="overviewCurbside" />
         </div>
         <div>
-          <img src="/img/store.jpg" alt="" height="500px" />
+          <img
+            :src="overviewCurbside.curbsideOverviewImage"
+            alt=""
+            height="500px"
+          />
         </div>
       </div>
     </section>
@@ -246,7 +259,7 @@ export default {
     const overviewNumbered = await $content(
       "delivery-overview_numbered"
     ).fetch();
-
+    console.log(overviewCurbside);
     const overviewService = await $content("delivery-overview_service").fetch();
     return {
       mainHero,
