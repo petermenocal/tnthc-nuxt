@@ -8,7 +8,7 @@
         </h1>
         <h2 class="subtitle">{{ page.mainHero.subtitle }}</h2>
         <div>
-          {{ page.body }}
+          {{ page.Content }}
           <nuxt-content :document="page"></nuxt-content>
         </div>
       </div>
