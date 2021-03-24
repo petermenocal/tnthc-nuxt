@@ -49,16 +49,21 @@ collections:
         file: "content/delivery-overview_curbside.md"
         fields:
           - {label: Body, name: body, widget: markdown}
+          - {label: Image, name: curbsideOverviewImage, widget: image }
       - label: "Delivery Page - Overview (Delivery)"
         name: "deliveryOverviewDelivery"
         file: "content/delivery-overview_delivery.md"
         fields:
           - {label: Body, name: body, widget: markdown}
+          - {label: Image, name: deliveryOverviewImage, widget: image }
       - label: "Delivery Page - Overview (Numbered)"
         name: "deliveryOverviewNumbered"
         file: "content/delivery-overview_numbered.md"
         fields:
-          - {label: Body, name: body, widget: markdown}
+          - {label: slot1, name: slot1, widget: string}
+          - {label: slot2, name: slot2, widget: string}
+          - {label: slot3, name: slot3, widget: string}
+          - {label: slot4, name: slot4, widget: string}
       - label: "Delivery Page - Overview (Service)"
         name: "deliveryOverviewService"
         file: "content/delivery-overview_service.md"
