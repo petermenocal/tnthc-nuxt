@@ -5,6 +5,7 @@
       <div id="hero-content">
         <h1 class="title">
           FREE DELIVERY
+          <nuxt-content :document="page" />
         </h1>
         <h2 class="subtitle">
           ORDER ONLINE FOR DELIVERY OR CURBSIDE
@@ -283,3 +284,13 @@
   }
 }
 </style>
+<script>
+export default {
+  async asyncData({ $content }) {
+    const page = await $content("home").fetch();
+    return {
+      page
+    };
+  }
+};
+</script>
