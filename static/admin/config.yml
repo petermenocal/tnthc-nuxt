@@ -9,7 +9,7 @@ collections:
     files:
       - label: "Home Page"
         name: "home"
-        file: "_content/home.yml"
+        file: "content/home.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - label: Main Hero
@@ -21,7 +21,7 @@ collections:
               - {label: Caption, name: caption, widget: markdown }
       - label: "Delivery/Curbside Page"
         name: "deliveryCurbside"
-        file: "_content/delivery.yml"
+        file: "content/delivery.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - label: Main Hero
@@ -68,7 +68,7 @@ collections:
               - {label: Content, name: contentServiceBlurb, widget: markdown }
       - label: "Contact Page"
         name: "contact"
-        file: "_content/contact.yml"
+        file: "content/contact.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - label: Contact Info

@@ -1,21 +1,15 @@
 <template>
   <div>
+    <nuxt-content :document="page" />
     <!-- hero main -->
     <section class="container">
       <div id="hero-content">
         <h1 class="title">
-          FREE DELIVERY
-          <nuxt-content :document="page" />
+          {{ page.mainHero.title }}
         </h1>
-        <h2 class="subtitle">
-          ORDER ONLINE FOR DELIVERY OR CURBSIDE
-        </h2>
+        <h2 class="subtitle">{{ page.mainHero.subtitle }}</h2>
         <div>
-          <p>$150 minimum purchase required for free delivery.</p>
-          <p>
-            For regular delivery, $50 minimum purchase required. ($10 delivery
-            fee)
-          </p>
+          {{ page.mainHero.caption }}
         </div>
       </div>
     </section>
