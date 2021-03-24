@@ -1,6 +1,5 @@
 <template>
   <div>
-    <nuxt-content :document="page" />
     <!-- hero main -->
     <section class="container">
       <div id="hero-content">
@@ -9,7 +8,8 @@
         </h1>
         <h2 class="subtitle">{{ page.mainHero.subtitle }}</h2>
         <div>
-          {{ page.mainHero.caption }}
+          {{ page.body }}
+          <nuxt-content :document="page"></nuxt-content>
         </div>
       </div>
     </section>
@@ -282,6 +282,7 @@
 export default {
   async asyncData({ $content }) {
     const page = await $content("home").fetch();
+    console.log(page);
     return {
       page
     };
