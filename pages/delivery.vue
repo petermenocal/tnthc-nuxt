@@ -17,7 +17,7 @@
         </div>
         <div class="delivery_overview_image">
           <img
-            :src="overviewCurbside.deliveryOverviewImage"
+            :src="overviewCurbside.curbsideOverviewImage"
             alt=""
             class="delivery_image"
           />
