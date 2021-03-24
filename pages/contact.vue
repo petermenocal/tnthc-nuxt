@@ -79,4 +79,9 @@ textarea {
   padding: 20px;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .contact-form {
+    flex-direction: column;
+  }
+}
 </style>

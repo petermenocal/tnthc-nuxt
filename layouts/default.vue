@@ -2,12 +2,28 @@
   <div>
     <div id="toolbar">
       <logo />
-      <span>
+      <b-button v-b-toggle.sidebar-no-header class="menutoggle"
+        ><svg viewBox="0 0 100 80" width="40" height="40">
+          <rect style="fill:rgb(255,255,255);" width="100" height="20"></rect>
+          <rect
+            style="fill:rgb(255,255,255);"
+            y="30"
+            width="100"
+            height="20"
+          ></rect>
+          <rect
+            style="fill:rgb(255,255,255);"
+            y="60"
+            width="100"
+            height="20"
+          ></rect></svg
+      ></b-button>
+      <span class="largelinks">
         <NuxtLink to="/" class="link">HOME</NuxtLink>
         <NuxtLink to="/waitlist" class="link">WAIT LIST</NuxtLink>
         <NuxtLink to="/delivery" class="link">DELIVERY/CURBSIDE</NuxtLink>
         <NuxtLink to="/contact" class="link">CONTACT</NuxtLink>
-        <a href="" class="btn-rounded link">ORDER NOW</a>
+        <NuxtLink to="/storeorder" class="btn-rounded link">ORDER NOW</NuxtLink>
       </span>
     </div>
     <nuxt />
@@ -18,10 +34,10 @@
         </div>
         <div class="links">
           <div>
-            <a href="">Wait List</a>
-            <a href="">Delivery + Curbside</a>
-            <a href="">Order Now</a>
-            <a href="">Contact</a>
+            <NuxtLink to="/waitlist">Wait List</NuxtLink>
+            <NuxtLink to="/delivery">Delivery + Curbside</NuxtLink>
+            <NuxtLink to="/storeorder">Order Now</NuxtLink>
+            <NuxtLink to="/contact">Contact</NuxtLink>
           </div>
           <div class="social">
             <a href="">Weedmaps</a>
@@ -39,6 +55,39 @@
         </div>
       </div>
     </div>
+    <!-- sidebar -->
+    <div>
+      <b-sidebar
+        id="sidebar-no-header"
+        aria-labelledby="sidebar-no-header-title"
+        no-header
+        shadow
+      >
+        <template #default="{ hide }">
+          <div class="p-3">
+            <b-button variant="primary" block @click="hide" id="close-btn"
+              >X</b-button
+            >
+            <h4 id="sidebar-no-header-title"><logo /></h4>
+            <nav class="mb-3">
+              <b-nav vertical>
+                <b-nav-item href="/" active @click="hide">Home</b-nav-item>
+                <b-nav-item href="/waitlist" @click="hide"
+                  >Wait List</b-nav-item
+                >
+                <b-nav-item href="/delivery" @click="hide"
+                  >Delivery/Curbside</b-nav-item
+                >
+                <b-nav-item href="/contact" @click="hide">Contact</b-nav-item>
+                <b-nav-item href="/storeorder" @click="hide"
+                  >Order Now</b-nav-item
+                >
+              </b-nav>
+            </nav>
+          </div>
+        </template>
+      </b-sidebar>
+    </div>
   </div>
 </template>
 
@@ -52,30 +101,41 @@ export default {
 };
 </script>
 <style>
-.text-center {
-  text-align: center;
-}
 html {
-  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
-  word-spacing: 1px;
+  line-height: 1.2;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+.text-center {
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Open Sans Condensed", sans-serif;
+  line-height: 1.25;
+}
+p,
+a {
+  font-family: "Open Sans", sans-serif;
+}
 h1 {
-  font-size: 3rem;
+  font-size: 3.1875em;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1.9792em;
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.4792em;
 }
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.2292em;
 }
 *,
 *:before,
@@ -150,5 +210,50 @@ h4 {
   flex-direction: column;
   align-items: space-between;
   justify-content: center;
+}
+.b-sidebar {
+  background: #16252e;
+  padding: 10px;
+  color: white !important;
+}
+.b-sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+  line-height: 2;
+}
+.b-sidebar * {
+  list-style-type: none;
+}
+#close-btn {
+  background: none;
+  color: rgb(165, 24, 24);
+  border: 0px;
+  font-weight: 800;
+  float: right;
+  font-size: 2rem;
+}
+.menutoggle {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 1200px) {
+  .largelinks {
+    display: none;
+  }
+  .menutoggle {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .largelinks {
+    display: block;
+  }
+  .menutoggle {
+    display: none;
+  }
 }
 </style>
