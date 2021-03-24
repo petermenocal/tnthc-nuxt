@@ -16,7 +16,6 @@
           <nuxt-content :document="overviewDelivery" />
         </div>
         <div class="delivery_overview_image">
-          require('~/assets/images/my-logo.png')
           <img
             :src="overviewCurbside.deliveryOverviewImage"
             alt=""
@@ -259,7 +258,6 @@ export default {
     const overviewNumbered = await $content(
       "delivery-overview_numbered"
     ).fetch();
-    console.log(overviewCurbside);
     const overviewService = await $content("delivery-overview_service").fetch();
     return {
       mainHero,
