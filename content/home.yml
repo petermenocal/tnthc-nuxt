@@ -6,3 +6,8 @@ mainHero:
     $150 minimum purchase required for free delivery.
 
     For regular delivery, $50 minimum purchase required. ($10 delivery fee)
+main_hero_title: FREE DELIVERY
+main_hero_subtitle: ORDER ONLINE FOR DELIVERY OR CURBSIDE
+body: |-
+  *$150 minimum purchase required for free delivery.*\
+  For regular delivery, $50 minimum purchase required. ($10 delivery fee)
