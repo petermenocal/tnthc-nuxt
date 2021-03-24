@@ -4,11 +4,11 @@
     <section class="container">
       <div id="hero-content">
         <h1 class="title">
-          {{ page.mainHero.title }}
+          <!-- {{ page.mainHero.title }} -->
         </h1>
-        <h2 class="subtitle">{{ page.mainHero.subtitle }}</h2>
+        <!-- <h2 class="subtitle">{{ page.mainHero.subtitle }}</h2> -->
         <div>
-          {{ page.Content }}
+          <!-- {{ page.Content }} -->
           <nuxt-content :document="page"></nuxt-content>
         </div>
       </div>
