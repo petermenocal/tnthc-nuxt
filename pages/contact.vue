@@ -46,6 +46,7 @@
 .cf {
   display: flex;
   flex-direction: column;
+  padding: 0px 10px 0px 10px;
 }
 .cf input,
 textarea {
@@ -55,6 +56,7 @@ textarea {
   border: 1px solid rgb(170, 170, 170);
   margin-bottom: 5px;
   min-width: 400px;
+  max-width: 100%;
 }
 textarea {
   height: 200px;
