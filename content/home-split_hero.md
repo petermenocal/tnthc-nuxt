@@ -1,5 +1,6 @@
 ---
 title: Split Hero
+splitHeroImage: /uploads/model-tp-logo.jpg
 ---
 
 ## *Nevada’s Premier*
