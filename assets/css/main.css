@@ -161,3 +161,8 @@ h4,
     display: none;
   }
 }
+
+/* exact link will show the primary color for only the exact matching link */
+.nuxt-link-exact-active {
+  color: #57eeff !important;
+}

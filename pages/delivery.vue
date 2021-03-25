@@ -17,7 +17,7 @@
         </div>
         <div class="delivery_overview_image">
           <img
-            :src="overviewCurbside.curbsideOverviewImage"
+            :src="overviewDelivery.deliveryOverviewImage"
             alt=""
             class="delivery_image"
           />
@@ -32,9 +32,9 @@
       </div>
       <div class="delivery_overview_content">
         <img
-          :src="overviewCurbside.deliveryOverviewImage"
-          height="200px"
+          :src="overviewDelivery.deliveryOverviewImage"
           alt=""
+          height="200px"
         />
         <nuxt-content :document="overviewDelivery" />
       </div>
@@ -68,11 +68,11 @@
         <p><CurbsideIcon /></p>
         <p>Daily 7am - 8pm</p>
       </div>
-      <div class="delivery_overview_content">
+      <div class="delivery_overview_content curb">
         <div class="curbside-content">
           <nuxt-content :document="overviewCurbside" />
         </div>
-        <div>
+        <div class="curbsde-image">
           <img
             :src="overviewCurbside.curbsideOverviewImage"
             alt=""
@@ -142,7 +142,14 @@ section {
   border-bottom: 7px solid #2a4759;
 }
 .num-wrap div {
-  padding: 40px;
+  min-width: 320px;
+  width: 20%;
+  min-height: 400px;
+  display: flex !important;
+  padding: 0 20px 0 20px;
+  align-items: flex-start;
+  justify-content: start;
+  flex-direction: column;
   line-height: 1.8;
 }
 .num-wrap div h1 {
@@ -217,12 +224,6 @@ section {
   color: #8bd9d9;
 }
 @media (max-width: 768px) {
-  .sameday {
-    display: none;
-  }
-  .samedaysm {
-    display: block;
-  }
   .num-wrap {
     flex-direction: column;
   }
@@ -234,12 +235,50 @@ section {
     padding-top: 20px;
   }
 }
+@media (max-width: 992px) {
+  .sameday {
+    display: none;
+  }
+  .samedaysm {
+    display: block;
+  }
+  .num-wrap {
+    padding-top: 75px;
+    justify-content: flex-start;
+  }
+  .num-wrap div {
+    width: 100%;
+    min-height: auto;
+    padding-bottom: 75px;
+  }
+  .curb {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1400px) {
+  .num-wrap {
+    flex-wrap: wrap;
+  }
+  .num-wrap div {
+    width: 50%;
+  }
+}
 @media (min-width: 992px) {
   #numbered {
     background: white;
     min-height: 700px;
     padding-top: 200px;
     margin-top: -200px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1185px) {
+  .sameday {
+    padding-left: 20px;
+  }
+  .delivery_image {
+    max-height: 900px;
+    margin-right: -800px;
   }
 }
 </style>
