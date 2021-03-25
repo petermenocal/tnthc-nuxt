@@ -50,7 +50,7 @@ collections:
         file: "content/delivery-main_hero.md"
         fields:
           - {label: Body, name: body, widget: markdown}
-          - {label: Image, name: bgMainHeroDelivery}
+          - {label: Image, name: bgMainHeroDelivery, widget: image}
       - label: "Delivery Page - Overview (Curbside)"
         name: "deliveryOverviewCurbside"
         file: "content/delivery-overview_curbside.md"
