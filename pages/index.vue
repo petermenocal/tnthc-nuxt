@@ -218,6 +218,7 @@
   width: 48%;
   flex-direction: row;
 }
+
 .delivery-section .card {
   background: white;
   color: black;
@@ -245,8 +246,18 @@
   width: 100%;
 }
 @media (max-width: 768px) {
+  .delivery-section h1 {
+    font-size: 10vw;
+  }
+  .delivery-section h2 {
+    font-size: 7vw;
+  }
+  .delivery-section h3 {
+    font-size: 4.5vw;
+  }
   #hero-content .nuxt-content p {
-    font-size: w;
+    font-size: 4vw;
+    margin-top: 5px;
   }
   .hero-split-image {
     max-height: 700px;
