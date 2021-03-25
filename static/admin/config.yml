@@ -15,7 +15,7 @@ collections:
         file: "content/home-main_hero.md"
         fields:
           - {label: Body, name: body, widget: markdown}
-          - {label: Image, name: mainHeroImage, widget: markdown}
+          - {label: Image, name: mainHeroImage, widget: image}
       - label: "Home Page - Split Hero"
         name: "homePageSplitHero"
         file: "content/home-split_hero.md"
