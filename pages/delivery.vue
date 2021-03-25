@@ -188,7 +188,9 @@ section {
   color: #8bd9d9 !important;
 }
 .delivery_overview_title h1 {
-  font-size: 4.5rem;
+  font-size: 4.2rem;
+  padding-top: 20px;
+  line-height: 1;
 }
 
 .delivery_overview_content {
@@ -223,6 +225,12 @@ section {
   font-weight: 200;
   font-family: "Open Sans", sans-serif;
   color: #8bd9d9;
+}
+#delivery-hero-content {
+  padding: 20px;
+}
+#delivery-hero-content .nuxt-content h1 {
+  font-size: 4em !important;
 }
 @media (max-width: 768px) {
   .num-wrap {

@@ -24,17 +24,24 @@
             <br />
             <br />
           </p>
-          <form action="" class="cf">
-            <input type="text" placeholder="name" />
-            <input type="text" placeholder="email" />
-            <textarea />
-            <button class="btn-rounded">Submit</button>
+          <form name="contact" method="POST" netlify class="cf">
+            <label for="name">
+              Your name:
+              <input type="text" placeholder="Name" name="name" />
+            </label>
+            <label for="email">
+              Your email:
+              <input type="email" placeholder="Email" name="email" />
+            </label>
+            <label for="message">Message:<textarea name="message"/></label>
+            <button type="submit" class="btn-rounded">Submit</button>
           </form>
         </div>
       </div>
     </div>
   </section>
 </template>
+
 <style>
 .cf {
   display: flex;
