@@ -220,6 +220,9 @@
 .delivery-section .card h1 {
   font-size: 2rem;
 }
+.card a {
+  color: black;
+}
 .cards {
   display: flex;
   align-items: center;
