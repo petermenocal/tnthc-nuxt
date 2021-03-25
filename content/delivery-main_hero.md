@@ -1,5 +1,6 @@
 ---
 title: Delivery -> Main Hero
+bgMainHeroDelivery: /uploads/tp-delivery-and-curbside-banner.png
 ---
 
 # Delivery&nbsp;+&nbsp;Curbside
