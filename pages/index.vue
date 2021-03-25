@@ -52,7 +52,10 @@
       </div>
     </section>
     <!-- delivery -->
-    <section class="delivery">
+    <section
+      class="delivery"
+      :style="{ backgroundImage: `url(${homeDelivery.bgDeliveryHeroHome})` }"
+    >
       <div class="delivery-section">
         <nuxt-content :document="homeDelivery" />
         <NuxtLink to="/deliveryorder">

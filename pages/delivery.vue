@@ -1,6 +1,9 @@
 <template>
   <div class="wrapd">
-    <section class="delivery-container">
+    <section
+      class="delivery-container"
+      :style="{ backgroundImage: `url(${mainHero.bgMainHeroDelivery})` }"
+    >
       <div id="delivery-hero-content">
         <nuxt-content :document="mainHero" />
       </div>
