@@ -107,7 +107,7 @@
 #hero-content .nuxt-content h2 {
   line-height: 1;
   font-size: 1.9792em;
-  font-size: 5vw;
+  font-size: 6vw;
 }
 
 .hero-split {
@@ -130,7 +130,11 @@
   justify-content: center;
 }
 .hero-split-content p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+}
+.hero-split-content h1 {
+  line-height: 1;
+  margin-bottom: 15px;
 }
 .subscribe-bar {
   background: #304757;
@@ -238,7 +242,7 @@
 }
 @media (max-width: 768px) {
   #hero-content .nuxt-content p {
-    font-size: 3vw;
+    font-size: w;
   }
   .hero-split-image {
     max-height: 700px;
