@@ -5,7 +5,7 @@
       <h1>Skip The Line!</h1>
       <p>Join our dispensary wait list!</p>
       <iframe
-        src="http://www.waitlist.me/w/11409020060"
+        src="https://www.waitlist.me/w/11409020060"
         frameborder="0"
         height="200px"
       ></iframe>

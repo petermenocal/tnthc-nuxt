@@ -148,7 +148,7 @@ section {
   display: flex !important;
   padding: 0 20px 0 20px;
   align-items: flex-start;
-  justify-content: start;
+  justify-content: flex-start;
   flex-direction: column;
   line-height: 1.8;
 }
