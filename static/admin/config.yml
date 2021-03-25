@@ -27,7 +27,7 @@ collections:
         file: "content/home-delivery.md"
         fields:
           - {label: Body, name: body, widget: markdown}
-          - {label: Image, name: image, widget: image}
+          - {label: Image, name: bgDeliverySectionHome, widget: image}
       - label: "Home Page - Delivery Card 1"
         name: "homePageDeliveryCard1"
         file: "content/home-delivery-card_1.md"
@@ -50,6 +50,7 @@ collections:
         file: "content/delivery-main_hero.md"
         fields:
           - {label: Body, name: body, widget: markdown}
+          - {label: Image, name: bgMainHeroDelivery}
       - label: "Delivery Page - Overview (Curbside)"
         name: "deliveryOverviewCurbside"
         file: "content/delivery-overview_curbside.md"
