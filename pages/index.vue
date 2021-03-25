@@ -52,7 +52,7 @@
       <div class="delivery-section">
         <nuxt-content :document="homeDelivery" />
         <NuxtLink to="/deliveryorder">
-          <button class="btn-cta">ORDER NOW</button></NuxtLink
+          <button class="btn-cta do-cta">ORDER NOW</button></NuxtLink
         >
       </div>
       <div class="delivery-section cards">
@@ -73,6 +73,7 @@
 .split {
   width: 50%;
 }
+
 .container {
   min-height: 800px;
   background: url("/img/hero.jpg") center center;
@@ -87,15 +88,26 @@
   padding-bottom: 250px !important;
 }
 
+#hero-content .nuxt-content h1 {
+  font-size: 5.188em;
+  line-height: 1;
+}
+#hero-content .nuxt-content h2 {
+  line-height: 2;
+}
+
 .hero-split {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
+.do-cta {
+  margin-top: 25px;
+}
 .hero-split-image img {
   max-width: 100%;
+  height: 100%;
 }
 .hero-split-content {
   padding: 20px;
@@ -105,14 +117,12 @@
 }
 .hero-split-content p {
   font-size: 1.5rem;
-  line-height: 2.5rem;
 }
 .subscribe-bar {
   background: #304757;
   height: 140px;
   display: flex;
   align-items: center;
-  margin-top: -5px;
   justify-content: center;
 }
 .subscribe-bar h3 {
@@ -153,6 +163,7 @@
 .skip-the-line div {
   height: 250px;
   width: 300px;
+  margin-top: -20px;
   margin-left: -30%;
   text-align: center;
 }
@@ -160,7 +171,7 @@
   font-size: 2.4rem;
 }
 .skip-the-line iframe {
-  margin: 20px 0;
+  margin: 25px 0 0 0;
 }
 .skip-the-line .legal {
   text-align: left;
@@ -197,20 +208,21 @@
   align-items: center;
   justify-content: space-between;
 }
+
 @media (max-width: 768px) {
   .container {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
       url("/img/hero.jpg");
+    padding: 50px;
   }
   #hero-content {
-    padding-bottom: 0px !important;
+    padding-bottom: 250px !important;
   }
-
   .subscribe-bar {
     padding: 30px 10px;
   }
   .subscribe-bar button {
-    margin-left: -40%;
+    margin-left: -41.12%;
     width: 40%;
   }
   .skip-the-line {
@@ -218,6 +230,9 @@
   }
   .skip-the-line div {
     margin-left: 0% !important;
+  }
+  .subscribe-bar input {
+    min-width: 70%;
   }
 }
 @media (max-width: 992px) {
@@ -236,6 +251,15 @@
   }
   .delivery-section .card h1 {
     font-size: 2rem;
+  }
+  .hero-split-content p {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 375px) {
+  .subscribe-bar button {
+    margin-left: -41.35%;
+    width: 40%;
   }
 }
 </style>

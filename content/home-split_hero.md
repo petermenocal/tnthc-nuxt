@@ -2,7 +2,7 @@
 title: Split Hero
 ---
 
-## Nevada’s Premier
+## *Nevada’s Premier*
 
 # Cannabis Dispensary
 

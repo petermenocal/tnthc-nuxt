@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="toolbar">
-      <logo />
+      <NuxtLink to="/"><logo /></NuxtLink>
       <b-button v-b-toggle.sidebar-no-header class="menutoggle"
         ><svg viewBox="0 0 100 80" width="40" height="40">
           <rect style="fill:rgb(255,255,255);" width="100" height="20"></rect>
@@ -30,27 +30,43 @@
     <div id="footer">
       <div class="content">
         <div class="legal">
-          <logo />
+          <NuxtLink to="/"><logo /></NuxtLink>
         </div>
         <div class="links">
-          <div>
+          <div class="link-btns">
             <NuxtLink to="/waitlist">Wait List</NuxtLink>
             <NuxtLink to="/delivery">Delivery + Curbside</NuxtLink>
             <NuxtLink to="/storeorder">Order Now</NuxtLink>
             <NuxtLink to="/contact">Contact</NuxtLink>
           </div>
           <div class="social">
-            <a href="">Weedmaps</a>
-            <a href="">Instagram</a>
-            <a href="">Facebook</a>
+            <a
+              href="https://weedmaps.com/dispensaries/top-notch-thc-2"
+              class="social-icon"
+              ><IconWeedmaps
+            /></a>
+            <a
+              href="https://www.instagram.com/topnotchdispensaries/"
+              class="social-icon"
+              ><IconInstagram
+            /></a>
+            <a href="https://www.facebook.com/topnotchthc" class="social-icon"
+              ><IconFacebook
+            /></a>
           </div>
         </div>
         <div class="legal">
-          <p>© 2021 Top Notch The Health Center All rights reserved.</p>
           <p>
-            Products sold on this site are cannabis products. Keep out of reach
-            of children. For use only by adults 21 years of age and older.
-            Purchase outside of Nevada is prohibited.
+            <strong
+              >© 2021 Top Notch The Health Center. All rights reserved.</strong
+            >
+          </p>
+          <p class="disclaimer">
+            <small
+              >Products sold on this site are cannabis products. Keep out of
+              reach of children. For use only by adults 21 years of age and
+              older. Purchase outside of Nevada is prohibited.</small
+            >
           </p>
         </div>
       </div>
@@ -93,10 +109,32 @@
 
 <script>
 import Logo from "~/components/Logo.vue";
+import IconFacebook from "~/components/LogoFacebook.vue";
+import IconInstagram from "~/components/LogoInstagram.vue";
+import IconWeedmaps from "~/components/LogoWeedmaps.vue";
 
 export default {
   components: {
-    Logo
+    Logo,
+    IconFacebook,
+    IconInstagram,
+    IconWeedmaps
   }
 };
 </script>
+<style>
+.social-icon {
+  height: 60px !important;
+}
+.disclaimer {
+  max-width: 870px;
+}
+.legal {
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .link-btns {
+    display: none;
+  }
+}
+</style>
