@@ -1,7 +1,10 @@
 <template>
   <div>
     <!-- hero main -->
-    <section class="container">
+    <section
+      class="container"
+      :style="{ backgroundImage: `url(${mainHero.mainHeroImage})` }"
+    >
       <div id="hero-content">
         <nuxt-content :document="mainHero"></nuxt-content>
         <br />
@@ -13,10 +16,7 @@
     <!-- hero split -->
     <section class="hero-split">
       <div class="hero-split-image split">
-        <img
-          src="https://staging-topnotch.web.app/build/assets/model-tp-logo.jpg"
-          alt=""
-        />
+        <img :src="splitHero.splitHeroImage" alt="" />
       </div>
       <div class="hero-split-content split">
         <nuxt-content :document="splitHero"></nuxt-content>
