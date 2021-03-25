@@ -1,6 +1,6 @@
 ---
 title: Delivery -> Overview - Delivery
-deliveryOverviewImage: /uploads/exhale-rewards-1024x500.jpeg
+deliveryOverviewImage: /uploads/bag2.png
 ---
 
 # Delivery
