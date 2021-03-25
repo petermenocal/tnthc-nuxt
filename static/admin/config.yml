@@ -27,6 +27,7 @@ collections:
         file: "content/home-delivery.md"
         fields:
           - {label: Body, name: body, widget: markdown}
+          - {label: Image, name: image, widget: image}
       - label: "Home Page - Delivery Card 1"
         name: "homePageDeliveryCard1"
         file: "content/home-delivery-card_1.md"
