@@ -98,10 +98,13 @@
 
 #hero-content .nuxt-content h1 {
   font-size: 5.188em;
+  font-size: 12.18vw;
   line-height: 1;
 }
 #hero-content .nuxt-content h2 {
-  line-height: 2;
+  line-height: 1;
+  font-size: 1.9792em;
+  font-size: 5vw;
 }
 
 .hero-split {
@@ -114,7 +117,7 @@
   margin-top: 25px;
 }
 .hero-split-image img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
 }
 .hero-split-content {
@@ -133,10 +136,13 @@
   align-items: center;
   justify-content: center;
 }
-.subscribe-bar h3 {
+.subscribe-form {
+  position: relative;
+}
+.subscribe-form h3 {
   color: white;
 }
-.subscribe-bar input {
+.subscribe-form input {
   padding: 14px;
   font-size: 1rem;
   width: 100%;
@@ -145,16 +151,19 @@
   border: 1px solid white;
   height: 50px;
 }
-.subscribe-bar button {
+.subscribe-form button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   height: 50px;
+  width: 30%;
+  min-width: 100px;
   padding: 14px;
   font-size: 1rem;
   border-radius: 50px;
   background: #379ba6;
   color: white;
   border: none;
-  margin-left: -30.8%;
-  width: 30%;
 }
 
 .skip-the-line {
@@ -216,8 +225,15 @@
   align-items: center;
   justify-content: space-between;
 }
-
+.subscribe-form {
+  max-width: 500px !important;
+  display: block;
+  width: 100%;
+}
 @media (max-width: 768px) {
+  #hero-content .nuxt-content p {
+    font-size: 3vw;
+  }
   .hero-split-image {
     max-height: 700px;
   }
@@ -226,23 +242,24 @@
       url("/img/hero.jpg");
     padding: 50px;
   }
+
   #hero-content {
     padding-bottom: 250px !important;
   }
   .subscribe-bar {
     padding: 30px 10px;
   }
-  .subscribe-bar button {
-    margin-left: -41.12%;
-    width: 40%;
+  .subscribe-form {
+    position: relative;
   }
+
   .skip-the-line {
     background: #98bfc6;
   }
   .skip-the-line div {
     margin-left: 0% !important;
   }
-  .subscribe-bar input {
+  .subscribe-form input {
     min-width: 70%;
   }
 }
@@ -267,10 +284,20 @@
     font-size: 1.25rem;
   }
 }
-@media (max-width: 375px) {
-  .subscribe-bar button {
-    margin-left: -41.35%;
-    width: 40%;
+
+@media (min-width: 1100px) {
+  #hero-content .nuxt-content p {
+    font-size: 1vw;
+  }
+  #hero-content .nuxt-content h1 {
+    font-size: 5.188em;
+    font-size: 10.18vw;
+    line-height: 1;
+  }
+  #hero-content .nuxt-content h2 {
+    line-height: 1;
+    font-size: 1.9792em;
+    font-size: 4vw;
   }
 }
 </style>

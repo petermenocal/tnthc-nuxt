@@ -20,6 +20,7 @@ collections:
         file: "content/home-split_hero.md"
         fields:
           - {label: Body, name: body, widget: markdown}
+          - {label: Image, name: splitHeroImage, widget: image}
       - label: "Home Page - Delivery"
         name: "homePageDelivery"
         file: "content/home-delivery.md"

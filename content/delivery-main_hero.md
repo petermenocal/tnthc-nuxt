@@ -2,8 +2,8 @@
 title: Delivery -> Main Hero
 ---
 
-# Delivery + Curbside
+# Delivery&nbsp;+&nbsp;Curbside
 
-## Curbside Pick-up: 7am - 8pm
+## Curbside Pick-up: 7am-8pm
 
-## In-store Shopping: 8am - 12am
+## In-store Shopping: 8am-12am

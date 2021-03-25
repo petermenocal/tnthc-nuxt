@@ -164,7 +164,7 @@ section {
   text-align: center;
 }
 .delivery-container {
-  min-height: 600px;
+  min-height: 300px;
   background: url("/img/tp-delivery-and-curbside-banner.png") center center;
   background-size: cover;
   color: white;
@@ -183,6 +183,7 @@ section {
 }
 .delivery_overview_title {
   text-align: center;
+  line-height: 1;
 }
 .delivery_overview_title p {
   color: #8bd9d9 !important;
@@ -190,7 +191,6 @@ section {
 .delivery_overview_title h1 {
   font-size: 4.2rem;
   padding-top: 20px;
-  line-height: 1;
 }
 
 .delivery_overview_content {
@@ -230,21 +230,19 @@ section {
   padding: 20px;
 }
 #delivery-hero-content .nuxt-content h1 {
-  font-size: 4em !important;
+  font-size: 4em;
 }
-@media (max-width: 768px) {
-  .num-wrap {
-    flex-direction: column;
-  }
-  .delivery_overview_content {
-    flex-direction: column;
-  }
-  .delivery_overview_title h1 {
-    font-size: 3rem;
-    padding-top: 20px;
-  }
-}
+
 @media (max-width: 992px) {
+  .delivery_overview_title {
+    text-align: center;
+  }
+  #delivery-hero-content .nuxt-content h1 {
+    font-size: 8vw;
+  }
+  #delivery-hero-content .nuxt-content h2 {
+    font-size: 4vw;
+  }
   .sameday {
     display: none;
   }
@@ -263,6 +261,24 @@ section {
   .curb {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  #delivery-hero-content .nuxt-content h1 {
+    font-size: 12vw;
+  }
+  #delivery-hero-content .nuxt-content h2 {
+    font-size: 6vw;
+  }
+  .num-wrap {
+    flex-direction: column;
+  }
+  .delivery_overview_content {
+    flex-direction: column;
+  }
+  .delivery_overview_title h1 {
+    font-size: 10vw;
+    padding-top: 20px;
   }
 }
 @media (max-width: 1400px) {
