@@ -54,7 +54,7 @@
     <!-- delivery -->
     <section
       class="delivery"
-      :style="{ backgroundImage: `url(${homeDelivery.bgDeliveryHeroHome})` }"
+      :style="{ backgroundImage: `url(${homeDelivery.bgDeliverySectionHome})` }"
     >
       <div class="delivery-section">
         <nuxt-content :document="homeDelivery" />
