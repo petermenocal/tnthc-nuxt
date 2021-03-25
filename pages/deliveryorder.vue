@@ -1,20 +1,18 @@
 <template>
   <div>
     <h1>Delivery</h1>
-  </div></template
->
+  </div>
+</template>
+
 <script>
 export default {
-  head() {
-    return {
-      script: [
-        {
-          hid: "weedmaps",
-          src: "https://topnotch.wm.store​/static/js/embed.js",
-          defer: true
-        }
-      ]
-    };
+  mounted() {
+    let recaptchaScript = document.createElement("script");
+    recaptchaScript.setAttribute(
+      "src",
+      "https://topnotch.wm.store​/static/js/embed.js"
+    );
+    document.head.appendChild(recaptchaScript);
   }
 };
 </script>
