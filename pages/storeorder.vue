@@ -1,7 +1,7 @@
 <template>
   <div>
     <iframe
-      src="/order-delivery.html"
+      src="/order-pickup.html"
       height="100%"
       width="100%"
       marginwidth="0"
