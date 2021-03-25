@@ -1,5 +1,11 @@
 <template>
   <div style="position: relative !important;">
+    <div class="wmheading">
+      <p>
+        Ordering for <em>delivery.</em>
+        <NuxtLink to="storeorder">Change to pickup.</NuxtLink>
+      </p>
+    </div>
     <iframe
       src="/order-delivery.html"
       height="100%"
@@ -9,7 +15,7 @@
       hspace="0"
       vspace="0"
       frameborder="0"
-      style="position:fixed; top:90px; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden;"
+      style="position:fixed; top:130px; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden;"
     />
   </div>
 </template>
