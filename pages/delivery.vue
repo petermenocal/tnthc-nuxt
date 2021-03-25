@@ -7,6 +7,7 @@
     </section>
 
     <section id="delivery_overview" class="sameday">
+      <a id="deliveryy"></a>
       <div class="delivery_overview_title">
         <h1>SAME DAY DELIVERY</h1>
         <p>On orders made before 12 (noon)</p>
@@ -61,7 +62,7 @@
         </div>
       </div>
     </section>
-
+    <a name="curbsidee" id="curbsidee"></a>
     <section id="delivery_overview">
       <div class="delivery_overview_title">
         <h1>Curbside Pick-up</h1>

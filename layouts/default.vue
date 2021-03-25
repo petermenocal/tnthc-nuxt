@@ -86,18 +86,14 @@
             >
             <h4 id="sidebar-no-header-title"><logo /></h4>
             <nav class="mb-3">
-              <b-nav vertical>
-                <b-nav-item href="/" active @click="hide">Home</b-nav-item>
-                <b-nav-item href="/waitlist" @click="hide"
-                  >Wait List</b-nav-item
+              <b-nav vertical class="navitems">
+                <NuxtLink to="/" @click="hide">Home</NuxtLink>
+                <NuxtLink to="/waitlist" @click="hide">Wait List</NuxtLink>
+                <NuxtLink to="/delivery" @click="hide"
+                  >Delivery/Curbside</NuxtLink
                 >
-                <b-nav-item href="/delivery" @click="hide"
-                  >Delivery/Curbside</b-nav-item
-                >
-                <b-nav-item href="/contact" @click="hide">Contact</b-nav-item>
-                <b-nav-item href="/storeorder" @click="hide"
-                  >Order Now</b-nav-item
-                >
+                <NuxtLink to="/contact" @click="hide">Contact</NuxtLink>
+                <NuxtLink to="/storeorder" @click="hide">Order Now</NuxtLink>
               </b-nav>
             </nav>
           </div>
@@ -131,6 +127,10 @@ export default {
 }
 .legal {
   padding: 20px;
+}
+.navitems {
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 768px) {
   .link-btns {

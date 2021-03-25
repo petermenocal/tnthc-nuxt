@@ -4,6 +4,10 @@
     <section class="container">
       <div id="hero-content">
         <nuxt-content :document="mainHero"></nuxt-content>
+        <br />
+        <NuxtLink to="/storeorder"
+          ><button class="btn-cta">Order Now</button></NuxtLink
+        >
       </div>
     </section>
     <!-- hero split -->
@@ -58,11 +62,15 @@
       <div class="delivery-section cards">
         <div class="card">
           <nuxt-content :document="homeDeliveryCard1" />
-          <NuxtLink to="/delivery">Learn more</NuxtLink>
+          <NuxtLink :to="{ path: '/delivery', hash: '#deliveryy' }"
+            >Learn more</NuxtLink
+          >
         </div>
         <div class="card">
           <nuxt-content :document="homeDeliveryCard2" />
-          <NuxtLink to="/delivery">Learn more</NuxtLink>
+          <NuxtLink :to="{ path: '/delivery', hash: '#curbsidee' }"
+            >Learn more</NuxtLink
+          >
         </div>
       </div>
     </section>
@@ -210,6 +218,9 @@
 }
 
 @media (max-width: 768px) {
+  .hero-split-image {
+    max-height: 700px;
+  }
   .container {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
       url("/img/hero.jpg");
