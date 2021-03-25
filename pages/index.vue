@@ -190,9 +190,12 @@
   margin-top: -20px;
   margin-left: -30%;
   text-align: center;
+  color: #304757;
 }
 .skip-the-line h1 {
-  font-size: 2.4rem;
+  font-size: 3rem;
+  font-style: italic;
+  color: #304757;
 }
 .skip-the-line iframe {
   margin: 25px 0 0 0;
@@ -221,6 +224,7 @@
   padding: 20px;
   border-radius: 5px;
   height: 300px;
+  margin-right: 20px;
   width: 300px;
   min-width: 300px;
 }

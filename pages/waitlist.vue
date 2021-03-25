@@ -38,8 +38,18 @@
   margin-left: -30%;
   text-align: center;
 }
+.skip-the-line div {
+  height: 250px;
+  width: 300px;
+  margin-top: -20px;
+  margin-left: -30%;
+  text-align: center;
+  color: #304757;
+}
 .skip-the-line h1 {
-  font-size: 2.4rem;
+  font-size: 3rem;
+  font-style: italic;
+  color: #304757;
 }
 .skip-the-line iframe {
   margin: 20px 0;
