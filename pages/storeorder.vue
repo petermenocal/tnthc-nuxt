@@ -12,7 +12,7 @@ export default {
       "src",
       "https://topnotch.wm.store​/static/js/embed.js"
     );
-    document.head.appendChild(recaptchaScript);
+    document.body.appendChild(recaptchaScript);
   }
 };
 </script>
