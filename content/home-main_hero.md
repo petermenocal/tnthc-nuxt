@@ -1,5 +1,6 @@
 ---
 title: Home
+mainHeroImage: /uploads/hero.jpg
 ---
 
 # FREE DELIVERY
