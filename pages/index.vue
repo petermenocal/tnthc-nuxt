@@ -175,7 +175,7 @@
 
 .skip-the-line {
   min-height: 500px;
-  background: #98bfc6 url("/img/hero-waitlist.png") center center;
+  background: #98bfc6 url("/img/hero-waitlist.webp") center center;
   background-size: cover;
   color: white;
   display: flex;
