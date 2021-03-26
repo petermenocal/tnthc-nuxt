@@ -26,14 +26,16 @@
           </p>
           <form name="contact" method="POST" netlify class="cf">
             <label for="name">
-              Your name:
+              <strong>Your name</strong>
               <input type="text" placeholder="Name" name="name" />
             </label>
             <label for="email">
-              Your email:
+              <strong>Your email</strong>
               <input type="email" placeholder="Email" name="email" />
             </label>
-            <label for="message">Message:<textarea name="message"/></label>
+            <label for="message"
+              ><strong>Message</strong><textarea name="message"
+            /></label>
             <button type="submit" class="btn-rounded">Submit</button>
           </form>
         </div>
@@ -50,13 +52,13 @@
 }
 .cf input,
 textarea {
-  border-radius: 20px;
+  border-radius: 10px;
   height: 35px;
   padding: 20px;
   border: 1px solid rgb(170, 170, 170);
-  margin-bottom: 5px;
-  min-width: 400px;
-  max-width: 100%;
+  margin-bottom: 10px;
+  width: 100%;
+  margin-top: 5px;
 }
 textarea {
   height: 200px;
@@ -80,7 +82,7 @@ textarea {
 }
 .contact-form-section {
   width: 48%;
-  min-width: 400px;
+  min-width: 100%;
   min-height: 300px;
   display: flex;
   flex-direction: column;
@@ -91,6 +93,16 @@ textarea {
 @media (max-width: 768px) {
   .contact-form {
     flex-direction: column;
+  }
+}
+@media (min-width: 992px) {
+  .cf input,
+  textarea {
+    min-width: 400px;
+  }
+  .contact-form-section {
+    min-width: 400px;
+    min-height: 300px;
   }
 }
 </style>
