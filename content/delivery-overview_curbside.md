@@ -1,6 +1,6 @@
 ---
 title: Delivery -> Overview - Curbside
-curbsideOverviewImage: /uploads/store.jpg
+curbsideOverviewImage: /uploads/store.webp
 ---
 
 ## Curbside Ordering
