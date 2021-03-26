@@ -24,13 +24,19 @@
     </section>
     <!-- subscribe bar -->
     <section class="subscribe-bar">
-      <div class="subscribe-form">
-        <h3>Subscribe for Deals</h3>
-        <div>
-          <input type="text" />
-          <button>Subscribe</button>
+      <form name="subscribe" method="POST" netlify>
+        <div class="subscribe-form">
+          <h3>Subscribe for Deals</h3>
+          <div>
+            <input
+              placeholder="Your Email"
+              type="email"
+              name="subscriber-email"
+            />
+            <button type="submit">Subscribe</button>
+          </div>
         </div>
-      </div>
+      </form>
     </section>
     <!-- skip the line -->
     <section class="skip-the-line">
