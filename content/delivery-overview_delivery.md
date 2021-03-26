@@ -1,6 +1,6 @@
 ---
 title: Delivery -> Overview - Delivery
-deliveryOverviewImage: /uploads/bag2.png
+deliveryOverviewImage: /uploads/bag2.webp
 ---
 
 # Delivery
