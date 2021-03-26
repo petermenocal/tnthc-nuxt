@@ -163,9 +163,7 @@ section {
 .samedaysm .delivery_overview_content .nuxt-content-container {
   padding: 20px;
 }
-.samedaysm .delivery_overview_content .nuxt-content-container .nuxt-content h1 {
-  text-align: center;
-}
+
 .delivery-container {
   min-height: 300px;
   background: url("/img/tp-delivery-and-curbside-banner.png") center center;
@@ -234,6 +232,9 @@ section {
 }
 #delivery-hero-content .nuxt-content h1 {
   font-size: 4em;
+}
+.samedaysm .delivery_overview_content .nuxt-content-container .nuxt-content h1 {
+  text-align: center !important;
 }
 
 @media (max-width: 992px) {
