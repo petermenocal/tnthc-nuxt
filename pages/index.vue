@@ -24,7 +24,7 @@
     </section>
     <!-- subscribe bar -->
     <section class="subscribe-bar">
-      <form name="subscribe" method="POST" netlify>
+      <form name="topnotchSubscriber" method="POST" netlify>
         <div class="subscribe-form">
           <h3>Subscribe for Deals</h3>
           <div>
