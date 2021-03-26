@@ -86,7 +86,7 @@
       </div>
     </section>
 
-    <section class="service">
+    <section class="service bg-white">
       <div>
         <nuxt-content :document="overviewService" />
       </div>

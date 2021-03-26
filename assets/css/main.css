@@ -7,7 +7,12 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-
+body {
+  background: #304757;
+}
+.bg-white {
+  background: white;
+}
 .text-center {
   text-align: center;
 }

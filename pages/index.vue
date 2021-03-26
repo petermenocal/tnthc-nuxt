@@ -14,7 +14,7 @@
       </div>
     </section>
     <!-- hero split -->
-    <section class="hero-split">
+    <section class="hero-split bg-white">
       <div class="hero-split-image split">
         <img :src="splitHero.splitHeroImage" alt="" />
       </div>
