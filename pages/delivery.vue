@@ -103,6 +103,12 @@ export default {
 };
 </script>
 <style>
+section#delivery_overview.samedaysm
+  div.delivery_overview_content
+  div.nuxt-content
+  h1#delivery {
+  text-align: center !important;
+}
 .wrapd {
   overflow-x: hidden;
 }
