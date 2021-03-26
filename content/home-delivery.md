@@ -1,6 +1,6 @@
 ---
 title: Home Page Delivery Section
-bgDeliverySectionHome: /uploads/hero-delivery.png
+bgDeliverySectionHome: /uploads/hero-delivery.webp
 ---
 ### Free Delivery With Minimum Purchase
 
