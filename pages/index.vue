@@ -144,13 +144,18 @@
 }
 .subscribe-bar {
   background: #304757;
-  height: 140px;
+  height: auto;
+  padding: 20px 0 35px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .subscribe-form {
   position: relative;
+}
+.subscribe-bar form {
+  margin: 0 auto;
 }
 .subscribe-form h3 {
   color: white;
@@ -255,6 +260,9 @@
   .delivery-section h1 {
     font-size: 10vw;
   }
+  .subscribe-bar form {
+    width: 80%;
+  }
   .delivery-section h2 {
     font-size: 7vw;
   }
@@ -277,9 +285,7 @@
   #hero-content {
     padding-bottom: 250px !important;
   }
-  .subscribe-bar {
-    padding: 30px 10px;
-  }
+
   .subscribe-form {
     position: relative;
   }
