@@ -24,7 +24,13 @@
             <br />
             <br />
           </p>
-          <form name="contact" method="POST" netlify class="cf">
+          <form
+            name="contact"
+            method="POST"
+            netlify
+            class="cf"
+            data-netlify="true"
+          >
             <label for="name">
               <strong>Your name</strong>
               <input type="text" placeholder="Name" name="name" />
