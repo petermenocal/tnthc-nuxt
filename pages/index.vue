@@ -29,8 +29,8 @@
           <h3>Subscribe for Deals</h3>
           <div>
             <input
+              type="text"
               placeholder="Your Email"
-              type="email"
               name="subscriberEmailAddress"
             />
             <button type="submit">Subscribe</button>
