@@ -1,6 +1,6 @@
 ---
 title: Home
-mainHeroImage: /uploads/hero.jpg
+mainHeroImage: /uploads/hero.webp
 ---
 
 # FREE DELIVERY
