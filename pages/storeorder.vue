@@ -2,8 +2,8 @@
   <div>
     <div class="wmheading">
       <p>
-        Ordering for <em>pickup.</em>
-        <NuxtLink to="deliveryorder">Change to delivery.</NuxtLink>
+        <span style="padding-right: 20px;">Ordering for <em>pickup</em></span>
+        <NuxtLink to="deliveryorder">Change to delivery</NuxtLink>
       </p>
     </div>
     <iframe
