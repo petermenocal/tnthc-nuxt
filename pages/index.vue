@@ -28,7 +28,11 @@
         <div class="subscribe-form">
           <h3>Subscribe for Deals</h3>
           <div>
-            <input placeholder="Your Email" type="email" name="subscriber" />
+            <input
+              placeholder="Your Email"
+              type="email"
+              name="subscriberEmailAddress"
+            />
             <button type="submit">Subscribe</button>
           </div>
         </div>
