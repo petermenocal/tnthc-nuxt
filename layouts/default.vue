@@ -26,7 +26,9 @@
         <NuxtLink to="/storeorder" class="btn-rounded link">ORDER NOW</NuxtLink>
       </span>
     </div>
-    <nuxt />
+    <div class="page-wrap">
+      <nuxt />
+    </div>
     <div id="footer">
       <div class="content">
         <div class="legal">
@@ -119,6 +121,17 @@ export default {
 };
 </script>
 <style>
+.page-wrap {
+  margin-top: 90px;
+}
+#toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+}
 .social-icon {
   height: 60px !important;
 }

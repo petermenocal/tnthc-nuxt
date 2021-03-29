@@ -70,7 +70,7 @@
       <div class="delivery_overview_title">
         <h1>Curbside Pick-up</h1>
         <p><CurbsideIcon /></p>
-        <p>Daily 7am - 8pm</p>
+        <p>Daily 8am - 8pm</p>
       </div>
       <div class="delivery_overview_content curb">
         <div class="curbside-content">
