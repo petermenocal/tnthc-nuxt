@@ -1,6 +1,8 @@
-# topnotch-nuxt
+# TopNotchTHC.com Website
 
-> tnthc
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6e69d7d4-4616-4876-b81d-1585962af597/deploy-status)](https://app.netlify.com/sites/topnotchthc/deploys)
+
+Built using Nuxt.js
 
 ## Build Setup
 
