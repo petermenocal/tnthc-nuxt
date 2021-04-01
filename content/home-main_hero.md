@@ -2,7 +2,7 @@
 title: Home
 mainHeroImage: /uploads/hero.webp
 ---
-# SALE TODAY
+# FREE DELIVERY
 
 ## ORDER ONLINE FOR DELIVERY&nbsp;OR&nbsp;CURBSIDE
 
