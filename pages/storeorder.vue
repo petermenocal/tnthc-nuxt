@@ -6,20 +6,9 @@
         <NuxtLink to="deliveryorder">Change to delivery</NuxtLink>
       </p>
     </div>
-    <!-- <iframe
-      class="weedmaps"
-      src="/order-pickup.html"
-      height="100%"
-      width="100%"
-      marginwidth="0"
-      marginheight="0"
-      hspace="0"
-      vspace="0"
-      frameborder="0"
-    /> -->
     <iframe
       class="weedmaps"
-      src="https://exhalebrands.com"
+      src="/order-pickup.html"
       height="100%"
       width="100%"
       marginwidth="0"
