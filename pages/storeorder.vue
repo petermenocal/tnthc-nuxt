@@ -39,7 +39,7 @@ body {
 }
 @media (max-width: 1200px) {
   .weedmaps {
-    height: 72vh;
+    height: 70vh;
   }
 }
 </style>
