@@ -84,7 +84,7 @@
             <b-button variant="primary" block @click="hide" id="close-btn"
               >X</b-button
             >
-            <nav class="mt-10 mb-3">
+            <nav class="bmb-3">
               <b-nav vertical class="navitems">
                 <NuxtLink to="/" @click="hide">Home</NuxtLink>
                 <NuxtLink to="/delivery" @click="hide"
@@ -139,6 +139,7 @@ export default {
 }
 .navitems {
   display: flex;
+  margin-top: 100px;
   flex-direction: column;
 }
 @media (max-width: 768px) {
