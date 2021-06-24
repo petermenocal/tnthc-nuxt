@@ -84,8 +84,7 @@
             <b-button variant="primary" block @click="hide" id="close-btn"
               >X</b-button
             >
-            <h4 id="sidebar-no-header-title"><logo /></h4>
-            <nav class="mb-3">
+            <nav class="mt-10 mb-3">
               <b-nav vertical class="navitems">
                 <NuxtLink to="/" @click="hide">Home</NuxtLink>
                 <NuxtLink to="/delivery" @click="hide"
