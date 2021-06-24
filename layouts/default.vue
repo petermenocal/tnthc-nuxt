@@ -20,7 +20,6 @@
       ></b-button>
       <span class="largelinks">
         <NuxtLink to="/" class="link">HOME</NuxtLink>
-        <NuxtLink to="/waitlist" class="link">WAIT LIST</NuxtLink>
         <NuxtLink to="/delivery" class="link">DELIVERY/CURBSIDE</NuxtLink>
         <NuxtLink to="/contact" class="link">CONTACT</NuxtLink>
         <NuxtLink to="/storeorder" class="btn-rounded link">ORDER NOW</NuxtLink>
@@ -36,7 +35,6 @@
         </div>
         <div class="links">
           <div class="link-btns">
-            <NuxtLink to="/waitlist">Wait List</NuxtLink>
             <NuxtLink to="/delivery">Delivery + Curbside</NuxtLink>
             <NuxtLink to="/storeorder">Order Now</NuxtLink>
             <NuxtLink to="/contact">Contact</NuxtLink>

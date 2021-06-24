@@ -14,7 +14,7 @@
       </div>
     </section>
     <!-- hero split -->
-    <section class="hero-split bg-white">
+    <section class="bg-white hero-split">
       <div class="hero-split-image split">
         <img :src="splitHero.splitHeroImage" alt="" />
       </div>
@@ -37,25 +37,6 @@
           </div>
         </div>
       </form>
-    </section>
-    <!-- skip the line -->
-    <section class="skip-the-line">
-      <div>
-        <h1>Skip The Line!</h1>
-        <p>Join our dispensary wait list!</p>
-        <iframe
-          src="https://www.waitlist.me/w/11409020060"
-          frameborder="0"
-          height="200px"
-        ></iframe>
-        <p class="legal">
-          <small
-            >Complete the form above to receive a confirmation text message.
-            When it's your turn, we will send a text that you can either Accept
-            or Reject. You must be on the waitlist to shop in-store.</small
-          >
-        </p>
-      </div>
     </section>
     <!-- delivery -->
     <section
