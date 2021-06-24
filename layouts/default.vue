@@ -88,7 +88,6 @@
             <nav class="mb-3">
               <b-nav vertical class="navitems">
                 <NuxtLink to="/" @click="hide">Home</NuxtLink>
-                <NuxtLink to="/waitlist" @click="hide">Wait List</NuxtLink>
                 <NuxtLink to="/delivery" @click="hide"
                   >Delivery/Curbside</NuxtLink
                 >
