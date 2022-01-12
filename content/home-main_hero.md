@@ -4,11 +4,9 @@ mainHeroImage: /uploads/hero.webp
 ---
 **TEMPORARY STORE HOURS 8am to 10pm!** 
 
- **Sorry for the inconvenience. **
+ **Sorry for the inconvenience.** 
 
 **FACE MASKS ARE MANDATORY FOR IN-STORE CUSTOMERS...STAY SAFE**
-
-
 
 # FREE DELIVERY
 
@@ -17,3 +15,9 @@ mainHeroImage: /uploads/hero.webp
 *$150 minimum purchase required for free delivery.*  
 
 <small>For regular delivery, $50 minimum purchase required. ($10 delivery fee)<small>
+
+**TEMPORARY STORE HOURS 8am to 10pm!** 
+
+ **Sorry for the inconvenience.** 
+
+**FACE MASKS ARE MANDATORY FOR IN-STORE CUSTOMERS...STAY SAFE**
