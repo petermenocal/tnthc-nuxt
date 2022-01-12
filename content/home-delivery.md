@@ -8,4 +8,4 @@ bgDeliverySectionHome: /uploads/hero-delivery.webp
 
 ## Curbside Pick-up:  8am-8pm
 
-## In-store Shopping: 8am-12am
+## In-store Shopping: 8am-10pm
