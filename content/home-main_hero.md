@@ -8,6 +8,8 @@ mainHeroImage: /uploads/hero.webp
 
 ###  **FACE MASKS ARE MANDATORY FOR IN-STORE CUSTOMERS...STAY SAFE**
 
+SORRY FOR THE INCONVIENENCE THIS MAY CAUSE!
+
 # FREE DELIVERY
 
 ## ORDER ONLINE FOR DELIVERY&nbsp;OR&nbsp;CURBSIDE
@@ -15,13 +17,3 @@ mainHeroImage: /uploads/hero.webp
 *$150 minimum purchase required for free delivery.*  
 
 <small>For regular delivery, $50 minimum purchase required. ($10 delivery fee)<small>
-
-
-
-
-
-
-
-
-
-SORRY FOR THE INCONVIENENCE THIS MAY CAUSE!
