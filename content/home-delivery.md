@@ -2,7 +2,9 @@
 title: Home Page Delivery Section
 bgDeliverySectionHome: /uploads/hero-delivery.webp
 ---
-### Free Delivery With Minimum Purchase
+## **FREE delivery on orders of $150 or more.**
+
+
 
 # Delivery&nbsp;+&nbsp;Curbside
 
