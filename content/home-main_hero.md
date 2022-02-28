@@ -2,13 +2,9 @@
 title: Home
 mainHeroImage: /uploads/hero.webp
 ---
-## **TEMPORARY STORE HOURS** 
+## **TEMPORARY STORE HOURS**
 
-## **8am to 10pm!** 
-
-###  **FACE MASKS ARE MANDATORY FOR IN-STORE CUSTOMERS...STAY SAFE**
-
-SORRY FOR THE INCONVIENENCE THIS MAY CAUSE!
+## **8am to 10pm!**
 
 # FREE DELIVERY
 
