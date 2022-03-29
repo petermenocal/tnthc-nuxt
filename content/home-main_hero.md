@@ -2,9 +2,7 @@
 title: Home
 mainHeroImage: /uploads/hero.webp
 ---
-## **TEMPORARY STORE HOURS**
 
-## **8am to 10pm!**
 
 # FREE DELIVERY
 
